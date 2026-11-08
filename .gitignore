@@ -1,0 +1,5 @@
+.local/
+.taste-skill/
+.impeccable/*
+!.impeccable/design.json
+!.impeccable/surface.md

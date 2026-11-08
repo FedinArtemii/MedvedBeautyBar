@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-08T19:02:07Z",
+  "title": "Design System: Medved Beauty Bar",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Фирменный розовый",
+        "tonalRamp": [
+          "oklch(15% 0.045 352.4)",
+          "oklch(26% 0.085 352.4)",
+          "oklch(38% 0.112 352.4)",
+          "oklch(50% 0.130 352.4)",
+          "oklch(62% 0.130 352.4)",
+          "oklch(74% 0.114 352.4)",
+          "oklch(86% 0.075 352.4)",
+          "oklch(95% 0.029 352.4)"
+        ]
+      },
+      "action": {
+        "role": "primary",
+        "displayName": "Слива",
+        "tonalRamp": [
+          "oklch(15% 0.038 355.4)",
+          "oklch(26% 0.070 355.4)",
+          "oklch(38% 0.093 355.4)",
+          "oklch(50% 0.108 355.4)",
+          "oklch(62% 0.108 355.4)",
+          "oklch(74% 0.095 355.4)",
+          "oklch(86% 0.062 355.4)",
+          "oklch(95% 0.024 355.4)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Тёмная слива",
+        "tonalRamp": [
+          "oklch(15% 0.020 355.0)",
+          "oklch(26% 0.036 355.0)",
+          "oklch(38% 0.048 355.0)",
+          "oklch(50% 0.056 355.0)",
+          "oklch(62% 0.056 355.0)",
+          "oklch(74% 0.049 355.0)",
+          "oklch(86% 0.032 355.0)",
+          "oklch(95% 0.012 355.0)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Молочно-розовый",
+        "tonalRamp": [
+          "oklch(15% 0.004 3.5)",
+          "oklch(26% 0.007 3.5)",
+          "oklch(38% 0.009 3.5)",
+          "oklch(50% 0.011 3.5)",
+          "oklch(62% 0.011 3.5)",
+          "oklch(74% 0.010 3.5)",
+          "oklch(86% 0.006 3.5)",
+          "oklch(95% 0.002 3.5)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Приглушённая роза",
+        "tonalRamp": [
+          "oklch(15% 0.044 354.6)",
+          "oklch(26% 0.081 354.6)",
+          "oklch(38% 0.108 354.6)",
+          "oklch(50% 0.125 354.6)",
+          "oklch(62% 0.125 354.6)",
+          "oklch(74% 0.110 354.6)",
+          "oklch(86% 0.073 354.6)",
+          "oklch(95% 0.028 354.6)"
+        ]
+      },
+      "paper-line": {
+        "role": "neutral",
+        "displayName": "Пудровая линия",
+        "tonalRamp": [
+          "oklch(15% 0.012 352.2)",
+          "oklch(26% 0.023 352.2)",
+          "oklch(38% 0.030 352.2)",
+          "oklch(50% 0.035 352.2)",
+          "oklch(62% 0.035 352.2)",
+          "oklch(74% 0.031 352.2)",
+          "oklch(86% 0.020 352.2)",
+          "oklch(95% 0.008 352.2)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Главный заголовок",
+        "purpose": "Крупная антиква с курсивным акцентом."
+      },
+      "headline": {
+        "displayName": "Заголовок раздела",
+        "purpose": "Название самостоятельного блока."
+      },
+      "title": {
+        "displayName": "Название услуги",
+        "purpose": "Заголовок раскрываемой строки."
+      },
+      "body": {
+        "displayName": "Основной текст",
+        "purpose": "Вводные абзацы и описания."
+      },
+      "body-mobile": {
+        "displayName": "Основной текст на телефоне",
+        "purpose": "Компактный набор в одной колонке."
+      },
+      "label": {
+        "displayName": "Надпись кнопки",
+        "purpose": "Текст главного действия."
+      },
+      "label-navigation": {
+        "displayName": "Навигация",
+        "purpose": "Текст ссылок и переключателя мобильного меню."
+      }
+    },
+    "motion": [
+      {
+        "name": "ease-standard",
+        "value": "cubic-bezier(.2,.8,.2,1)",
+        "purpose": "Переходы ссылок, кнопки и раскрываемых элементов."
+      },
+      {
+        "name": "hover-in",
+        "value": "150ms",
+        "purpose": "Появление подчёркивания или смена цвета при наведении."
+      },
+      {
+        "name": "hover-out",
+        "value": "120ms",
+        "purpose": "Возврат ссылки или кнопки к исходному состоянию."
+      },
+      {
+        "name": "press",
+        "value": "90ms",
+        "purpose": "Отклик кнопки на нажатие."
+      },
+      {
+        "name": "disclosure",
+        "value": "180ms",
+        "purpose": "Вход описания услуги или списка мобильной навигации."
+      },
+      {
+        "name": "ease-enter",
+        "value": "cubic-bezier(.22,1,.36,1)",
+        "purpose": "Вступление первого экрана и раскрытие фотографии по дуге."
+      },
+      {
+        "name": "hero-enter",
+        "value": "1150ms",
+        "purpose": "Длительность последовательности вступления первого экрана."
+      },
+      {
+        "name": "visit-photo-reveal",
+        "value": "960ms",
+        "purpose": "Маска от circle(28% at 52% 67%) до circle(110% at 52% 67%). Однократно после появления 25% рамки. При уменьшенном движении кадр виден целиком."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide-to-medium",
+        "value": "1100px"
+      },
+      {
+        "name": "split-heading",
+        "value": "900px"
+      },
+      {
+        "name": "single-column",
+        "value": "690px"
+      },
+      {
+        "name": "compact-disclosure",
+        "value": "359px"
+      },
+      {
+        "name": "short-wide-hero-height",
+        "value": "790px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Кнопка записи",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Основная ссылка на запись. На телефоне заполняет ширину колонки.",
+      "html": "<a class=\"ds-booking\" href=\"https://vk.com/medved_bb\">Записаться в ВК<svg width=\"15\" height=\"15\" aria-hidden=\"true\" viewBox=\"0 0 20 20\" fill=\"none\"><path d=\"M5 15 15 5M6 5h9v9\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-booking { display: inline-flex; align-items: center; justify-content: space-between; gap: 30px; min-height: 57px; padding: 0 22px; border-radius: 0; background: var(--action, #641d3e); color: var(--paper, #fff5f7); font: 700 15px/1.2 var(--text, Manrope, Arial, sans-serif); text-decoration: none; transition: background-color var(--m-out, 120ms) var(--ease, cubic-bezier(.2,.8,.2,1)), transform var(--m-press, 90ms) var(--ease, cubic-bezier(.2,.8,.2,1)); } .ds-booking svg { flex: none; transition: transform var(--m-out, 120ms) var(--ease, cubic-bezier(.2,.8,.2,1)); } .ds-booking:hover { background: color-mix(in oklab, var(--action, #641d3e) 84%, var(--bg, #f086b6)); transition-duration: var(--m-in, 150ms), var(--m-press, 90ms); } .ds-booking:focus-visible { outline: 2px solid var(--action, #641d3e); outline-offset: 4px; } .ds-booking:focus-visible svg { transform: translateX(3px); } .ds-booking:active { transform: translateY(1px) scale(.985); } @media (hover: hover) and (pointer: fine) { .ds-booking:hover { transform: translateY(-1px); } .ds-booking:hover svg { transform: translateX(3px); } .ds-booking:active { transform: translateY(1px) scale(.985); } } @media (max-width: 690px) { .ds-booking { display: flex; min-height: 51px; padding-inline: 17px; } } @media (prefers-reduced-motion: reduce) { .ds-booking, .ds-booking:is(:hover, :active, :focus-visible) svg { transform: none; transition-property: background-color; } .ds-booking:is(:hover, :active) { transform: none; } .ds-booking:active { background: color-mix(in oklab, var(--action, #641d3e) 74%, var(--bg, #f086b6)); } }"
+    },
+    {
+      "name": "Навигация в шапке",
+      "kind": "nav",
+      "refersTo": "desktop-navigation",
+      "description": "Ссылки разделов с линией при наведении и фокусе.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Разделы страницы\"><a href=\"#services\">Услуги</a><a href=\"#visit\">Как добраться</a></nav>",
+      "css": ".ds-nav { display: flex; gap: 30px; background: var(--pink, #f086b6); font: 700 14px/1.55 var(--text, Manrope, Arial, sans-serif); } .ds-nav a { display: inline-flex; align-items: center; min-height: 44px; padding-bottom: 2px; color: var(--ink, #381725); } .ds-nav a { text-decoration: none; background-image: linear-gradient(currentColor, currentColor), linear-gradient(var(--line, #a44b72), var(--line, #a44b72)); background-repeat: no-repeat; background-size: 0% 1px, 0% 1px; background-position: right 0 bottom 0, 0 100%; transition: background-size var(--m-out, 120ms) var(--ease, cubic-bezier(.2,.8,.2,1)); } .ds-nav a:is(:hover, :focus-visible) { background-size: 100% 1px, 100% 1px; background-position: left 0 bottom 0, 0 100%; transition-duration: var(--m-in, 150ms); } @media (prefers-reduced-motion: reduce) { .ds-nav a { transition: none; } } .ds-nav a:focus-visible { outline: 2px solid var(--action, #641d3e); outline-offset: 4px; }"
+    },
+    {
+      "name": "Мобильное меню",
+      "kind": "nav",
+      "refersTo": "mobile-navigation",
+      "description": "Нативное раскрытие навигации с индикатором «плюс» или «минус».",
+      "html": "<details class=\"ds-menu\"><summary>Меню</summary><nav aria-label=\"Разделы страницы\"><a href=\"#services\">Услуги</a><a href=\"#visit\">Как добраться</a><a href=\"https://vk.com/medved_bb\">Мы ВКонтакте<svg width=\"15\" height=\"15\" aria-hidden=\"true\" viewBox=\"0 0 20 20\" fill=\"none\"><path d=\"M5 15 15 5M6 5h9v9\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a></nav></details>",
+      "css": ".ds-menu { background: var(--pink, #f086b6); color: var(--ink, #381725); font: 700 14px/1.55 var(--text, Manrope, Arial, sans-serif); } .ds-menu summary { display: flex; align-items: center; gap: 8px; min-height: 44px; padding-left: 6px; list-style: none; cursor: pointer; } .ds-menu summary::-webkit-details-marker { display: none; } .ds-menu summary::after { content: \"\"; width: 13px; height: 13px; flex: none; background: linear-gradient(currentColor, currentColor) center / 100% 1px no-repeat, linear-gradient(currentColor, currentColor) center / 1px 100% no-repeat; } .ds-menu[open] summary::after { background-size: 100% 1px, 1px 0; } .ds-menu nav { padding: 12px 20px 22px; display: grid; gap: 2px; border-bottom: 1px solid var(--line, #a44b72); } .ds-menu a { display: flex; align-items: center; justify-content: space-between; min-height: 44px; color: inherit; padding-bottom: 2px; } .ds-menu a { text-decoration: none; background-image: linear-gradient(currentColor, currentColor), linear-gradient(var(--line, #a44b72), var(--line, #a44b72)); background-repeat: no-repeat; background-size: 0% 1px, 0% 1px; background-position: right 0 bottom 0, 0 100%; transition: background-size var(--m-out, 120ms) var(--ease, cubic-bezier(.2,.8,.2,1)); } .ds-menu a:is(:hover, :focus-visible) { background-size: 100% 1px, 100% 1px; background-position: left 0 bottom 0, 0 100%; transition-duration: var(--m-in, 150ms); } @media (prefers-reduced-motion: reduce) { .ds-menu a { transition: none; } } .ds-menu :is(summary,a):focus-visible { outline: 2px solid var(--action, #641d3e); outline-offset: 4px; } @media (prefers-reduced-motion: no-preference) { .ds-menu[open] nav { animation: ds-disclosure-in 180ms var(--ease, cubic-bezier(.2,.8,.2,1)) both; } @keyframes ds-disclosure-in { from { opacity: .25; transform: translateY(-5px); } } }"
+    },
+    {
+      "name": "Строка услуги",
+      "kind": "custom",
+      "refersTo": "service-disclosure",
+      "description": "Заголовок услуги раскрывает описание под разделителем.",
+      "html": "<details class=\"ds-service\"><summary>Маникюр и педикюр</summary><p>Маникюр, педикюр и покрытие ногтей.</p></details>",
+      "css": ".ds-service { color: var(--ink, #381725); background: var(--paper, #fff5f7); border-block: 1px solid var(--paper-line, #dec2cd); font: 400 18px/1.55 var(--text, Manrope, Arial, sans-serif); } .ds-service summary { display: flex; align-items: center; justify-content: space-between; min-height: 69px; gap: 14px; padding: 9px 0; cursor: pointer; list-style: none; font: 500 clamp(26px, 3vw, 43px)/1.05 var(--display, 'Cormorant Garamond', Georgia, serif); } .ds-service summary::-webkit-details-marker { display: none; } .ds-service summary::after { content: \"\"; width: 19px; height: 19px; flex: none; background: linear-gradient(currentColor, currentColor) center / 100% 1px no-repeat, linear-gradient(currentColor, currentColor) center / 1px 100% no-repeat; } .ds-service[open] summary::after { background-size: 100% 1px, 1px 0; } .ds-service summary:hover { color: var(--action, #641d3e); } .ds-service summary:focus-visible { outline: 2px solid var(--action, #641d3e); outline-offset: 4px; } .ds-service p { margin: 0 30px 20px 0; max-width: 36ch; } @media (prefers-reduced-motion: no-preference) { .ds-service[open] p { animation: ds-disclosure-in 180ms var(--ease, cubic-bezier(.2,.8,.2,1)) both; } @keyframes ds-disclosure-in { from { opacity: .25; transform: translateY(-5px); } } } @media (max-width: 690px) { .ds-service { font-size: 16px; } .ds-service summary { min-height: 59px; font-size: 34px; } } @media (max-width: 359px) { .ds-service summary { font-size: 28px; } }"
+    },
+    {
+      "name": "Ссылка на карту",
+      "kind": "custom",
+      "refersTo": "map-link",
+      "description": "Текстовая ссылка с тонким подчёркиванием на фирменном фоне.",
+      "html": "<a class=\"ds-map-link\" href=\"https://yandex.ru/maps/org/medved_beauty_bar/210274487347/\">Открыть на карте</a>",
+      "css": ".ds-map-link { display: inline-flex; align-items: center; min-height: 44px; padding-bottom: 2px; color: var(--ink, #381725); font: 400 18px/1.55 var(--text, Manrope, Arial, sans-serif); } .ds-map-link { text-decoration: none; background-image: linear-gradient(currentColor, currentColor), linear-gradient(var(--line, #a44b72), var(--line, #a44b72)); background-repeat: no-repeat; background-size: 0% 1px, 100% 1px; background-position: right 0 bottom 0, 0 100%; transition: background-size var(--m-out, 120ms) var(--ease, cubic-bezier(.2,.8,.2,1)); } .ds-map-link:is(:hover, :focus-visible) { background-size: 100% 1px, 100% 1px; background-position: left 0 bottom 0, 0 100%; transition-duration: var(--m-in, 150ms); } @media (prefers-reduced-motion: reduce) { .ds-map-link { transition: none; } } .ds-map-link:focus-visible { outline: 2px solid var(--action, #641d3e); outline-offset: 4px; } @media (max-width: 690px) { .ds-map-link { font-size: 16px; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Розовый разворот",
+    "overview": "Фирменный розовый задаёт тон, крупная антиква собирает заголовки, а фотографии показывают детали работы крупным планом. Композиция строится как журнальный разворот с общими полями и тонкими линиями.\n\nМолочно-розовый фон отделяет список услуг от крупных розовых полей. Сливовая заливка выделяет запись, а навигация остаётся текстовой.",
+    "keyCharacteristics": [
+      "Крупные заголовки с засечками и ясный текст без засечек.",
+      "Прямоугольные фотографии с кадрированием под ширину экрана.",
+      "Круглый знак и однократное раскрытие фотографии по дуге."
+    ],
+    "rules": [
+      {
+        "name": "Правило сливового акцента",
+        "body": "Заливку цвета «Слива» используйте для главного действия. На фирменном розовом фоне текст набирайте цветом «Тёмная слива».",
+        "section": "colors"
+      },
+      {
+        "name": "Правило плоских поверхностей",
+        "body": "Разделяйте области цветом фона, отступом или линией (1 px).",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Выравнивайте текст, фотографии и линии шапки и подвала по общим полям.",
+      "Сохраняйте видимый фокус и полноценный статический кадр при уменьшенном движении."
+    ],
+    "donts": [
+      "Скруглять рамки фотографий и кнопку записи.",
+      "Повторять раскрытие по дуге в других блоках страницы."
+    ]
+  }
+}
