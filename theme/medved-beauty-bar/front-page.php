@@ -41,7 +41,7 @@ $arrow   = '<svg class="arrow" aria-hidden="true" viewBox="0 0 20 20" fill="none
 <header class="site-head nav" id="top">
     <div class="head-row wrap">
         <a class="brand" href="<?php echo esc_url( $home ); ?>" aria-label="<?php echo esc_attr( $name ); ?>">
-            <span class="brand-mark"><img src="<?php echo esc_url( $assets . '/img/logo.webp' ); ?>" width="153" height="153" alt=""></span>
+            <span class="brand-mark"><img src="<?php echo esc_url( $assets . '/img/logo-160.webp' ); ?>" srcset="<?php echo esc_attr( $assets . '/img/logo-160.webp 160w, ' . $assets . '/img/logo-320.webp 320w' ); ?>" sizes="153px" width="153" height="153" alt=""></span>
             <span><strong>MEDVED</strong>BEAUTY BAR</span>
         </a>
         <nav class="desktop-nav" aria-label="Разделы страницы">

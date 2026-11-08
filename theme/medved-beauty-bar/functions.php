@@ -42,16 +42,24 @@ add_filter( 'render_block_core/image', function ( $html, $block ) {
         }
         $src = $tags->get_attribute( 'src' );
         $dimensions = array(
-            'hero.webp'  => array( 1500, 1000 ),
-            'nails.webp' => array( 567, 850 ),
-            'brows.webp' => array( 705, 850 ),
-            'visit.webp'  => array( 1400, 933 ),
+            'hero.webp'  => array( 1500, 1000, array( 680, 1000 ), '(max-width: 690px) calc(100vw - 40px), (max-width: 1100px) calc(100vw - 88px), (max-width: 1584px) calc(100vw - 144px), 1440px' ),
+            'nails.webp' => array( 567, 850, array( 360 ), '(max-width: 690px) calc(50vw - 25px), 28vw' ),
+            'brows.webp' => array( 705, 850, array( 360 ), '(max-width: 690px) calc(50vw - 25px), 28vw' ),
+            'visit.webp' => array( 1400, 933, array( 720 ), '(max-width: 690px) calc(100vw - 40px), 54vw' ),
         );
         $theme_image_path = wp_parse_url( medved_assets(), PHP_URL_PATH ) . '/img/';
         if ( is_string( $src ) && str_starts_with( wp_parse_url( $src, PHP_URL_PATH ) ?? '', $theme_image_path ) && isset( $dimensions[ basename( $src ) ] ) ) {
-            list( $width, $height ) = $dimensions[ basename( $src ) ];
+            list( $width, $height, $variants, $sizes ) = $dimensions[ basename( $src ) ];
+            $stem = substr( $src, 0, -5 );
+            $srcset = array();
+            foreach ( $variants as $variant ) {
+                $srcset[] = "{$stem}-{$variant}.webp {$variant}w";
+            }
+            $srcset[] = "{$src} {$width}w";
             $tags->set_attribute( 'width', $width );
             $tags->set_attribute( 'height', $height );
+            $tags->set_attribute( 'srcset', implode( ', ', $srcset ) );
+            $tags->set_attribute( 'sizes', $sizes );
         }
     }
     return $tags->get_updated_html();
